@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import utility.ListnerImpl;
 import utility.Main;
 
 import java.io.File;
@@ -14,7 +15,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Scanner;
 
-//@Listeners(utility.ListnerImpl.class)
+//@Listeners(ListnerImpl.class)
 public class Sample
 {
 

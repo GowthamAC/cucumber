@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression_Suite" parallel="classes">
+    <test parallel="classes" name="add classes" thread-count="2">
+        <classes>
+            <class name="javaSelenium"></class>
+            <class name="javaSelenium2"></class>
+            <class name="javaSelenium3"></class>
+        </classes>
+    </test>
+</suite>
