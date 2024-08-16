@@ -57,5 +57,7 @@ public class Sample
         driver.quit();
 
         new Scanner(System.in);
+
+        System.out.println("New Branch Created");
     }
 }
