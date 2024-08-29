@@ -6,7 +6,7 @@ public class stack {
 
     public static void main(String[] args) {
 
-        String str = "a{(a())}";
+        String str = "{(a())}";
         System.out.println(balance(str));
 
     }

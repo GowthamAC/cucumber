@@ -7,14 +7,23 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 
 class aa {
-    public String name= "name1";
-    public int phnNo =123;
-    public String add = "Bangalore";
-
-    public aa(){
-
+   aa(){
+       System.out.println("1st class");
+   }
+}
+class bb extends aa{
+    bb(){
+        System.out.println("2nd class");
     }
-    public aa(String name, String add, int phnNo){
-        this.name=name;
+}
+class cc extends bb{
+    cc(){
+        super();
+        System.out.println("3rd class");
+    }
+
+    public static void main(String[] args) {
+        cc obj = new cc();
+
     }
 }

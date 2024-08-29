@@ -13,10 +13,9 @@ public class BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "") WebElement UserName;
-
-    public WebElement UserName(){
-        return UserName;
+    @FindBy(xpath = "xpath expression") WebElement UN_TextField;
+    public WebElement UN_TextField(){
+        return UN_TextField;
     }
 
 }

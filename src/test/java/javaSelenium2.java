@@ -12,30 +12,40 @@ public class javaSelenium2 {
 
     @Test
     public void Date_Selection1() throws InterruptedException {
-        WebDriver driver=new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        driver.get("https://www.makemytrip.com/");
-        WebElement crossIcon = driver.findElement(By.xpath("//span[@class='commonModal__close']"));
-        wait.until(ExpectedConditions.visibilityOf(crossIcon));
-        crossIcon.click();
-
-        WebElement departure = driver.findElement(By.xpath("//label[@for='departure']"));
-        wait.until(ExpectedConditions.visibilityOf(departure));
-        departure.click();
-        String Date="Mar 06 2025";
-        for(;;){
-            try{
-                System.out.println("Trying for date");
-                driver.findElement(By.xpath("//div[contains(@aria-label,'"+ Date +"')]")).click();
-                break;
-            }catch(Exception e){
-                driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
-//                Thread.sleep(5000);
-            }
+        int n=5;
+        int a=1;
+    for(int i=1; i<n; i++){
+    for(int j=i; j<=n; j++){
+        if(a==4) {
+            System.out.print(a);
+            break;
+        }else{
+            System.out.print(a);
         }
+    }
+    a=a+1;
+        System.out.println();
+}
 
+    }
+
+    @Test
+    public  void newCase(){
+
+        int n=6;
+        for(int i=1;i<=n;i++){
+            for(int j=0;j<n;j++){
+                if(i==4){
+                    System.out.print(i);
+                    break;
+                }else if(i==5){
+                    break;
+                }else if(i+j<=n-1){
+                    System.out.print(i);
+                }
+            }
+            System.out.println();
+        }
 
     }
 }

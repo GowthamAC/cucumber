@@ -1,8 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MySuite">
-    <test name="jenkins job">
+    <test name="jenkins job chrome">
+    <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="javaSelenium"></class>
+            <class name="luma"></class>
+        </classes>
+    </test>
+    <test name="jenkins job edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="luma"></class>
         </classes>
     </test>
 </suite>
