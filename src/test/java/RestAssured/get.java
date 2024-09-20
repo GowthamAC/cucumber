@@ -18,11 +18,13 @@ public class get {
 //        System.out.println(response_body);
 //        Object value = response.jsonPath().get("data[2].first_name");
 //        System.out.println(value);
-        Response response = given().queryParam("page","2")
-                .when().get("https://reqres.in/api/users");
-        String response_body = response.asString();
-        System.out.println(response_body);
-        List<Object> ids = response.jsonPath().getList("data.id");
-        System.out.println(ids);
+        Response response = given().queryParam("page","2").pathParam("key","api/users")
+                .when().get("https://reqres.in/{key}");
+        System.out.println(response.prettyPeek());
+//        System.out.println(response.prettyPrint().toString());
+//        String response_body = response.asString();
+//        System.out.println(response_body);
+//        List<Object> ids = response.jsonPath().getList("data.id");
+//        System.out.println(ids);
     }
 }
